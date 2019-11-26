@@ -19,7 +19,7 @@ function! CurtineIncSw()
     let l:result = substitute(system(l:cmd), '\n', '', '')
 
     if filereadable(l:result)
-      exe "e " l:result
+      exe "vsp " l:result
     endif
   endif
 endfun
